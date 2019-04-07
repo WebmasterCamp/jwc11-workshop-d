@@ -54,37 +54,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <body>
 	<!-- NAV BAR -->
-	<nav class="navbar midnight">
-			<div class="container">
-					<div class="navbar-brand">
-							<a href="index.html">
-									<img class="navbar-item nospace" src="../img/logo_dark_64x64.png" width="64" height="64">
-							</a>
-							<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-									data-target="navbarBasicExample">
-									<span aria-hidden="true"></span>
-									<span aria-hidden="true"></span>
-									<span aria-hidden="true"></span>
-							</a>
-					</div>
-					<div class="navbar-menu">
-							<div class="navbar-start">
-									<a class="navbar-item" href="../index.html">Home</a>
-									<a class="navbar-item" href="./index.html">Blog</a>
-							</div>
-
-							<div class="navbar-end"></div>
-									<div class="navbar-item">
-											<div class="buttons">
-													<a class="button is-outlined is-light">Sign up</a>
-													<a class="button primary" style="border: 0;"><strong>Sign in</strong></a>
-											</div>
-									</div>
-							</div>
-					</div>
+  <nav class="navbar midnight" style="position: sticky; top: 0;">
+			<div class="navbar-brand">
+				<!-- logo -->
+				<a href="index.html"><img class="navbar-item" src="../img/logo_dark_64x64.png" width="64" height="64"></a>
+				<!-- hamburger icon -->
+				<a class="navbar-burger burger" data-target="navbarMenu">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
 			</div>
-	</nav>
-	<!-- NAV BAR END -->
+			<div class="container">
+				<!-- navbar menu -->
+				<div id="navbarMenu" class="navbar-menu midnight">
+					<!-- left -->
+					<div class="navbar-start">
+						<a class="navbar-item" href="../index.html">Home</a>
+						<a id="nav-active" class="navbar-item" href="../blog/index.html">Blog</a>
+						<a class="navbar-item" href="../event/index.html">Event</a>
+					</div>
+					<!-- right -->
+					<div class="navbar-end">
+						<div class="navbar-item">
+							<div class="buttons">
+								<a class="button is-light is-outlined" style="border: 0;" href="../register/index.html">Sign up</a>
+								<a class="button primary-outlined" href="../login/index.html"><strong>Sign in</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- NAV BAR END -->
+	
 
 
 	<!---start-content---->

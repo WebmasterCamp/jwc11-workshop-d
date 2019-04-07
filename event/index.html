@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- BULMA -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
+  <link rel="stylesheet" href="../main.css" />
+  <link rel="stylesheet" href="main.css" />
+  <!-- Flickity -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+<body class="light">
+  <!-- NAV BAR -->
+  <nav class="navbar midnight" style="position: sticky; top: 0;">
+    <div class="navbar-brand">
+      <!-- logo -->
+      <a href="../index.html"><img class="navbar-item" src="../img/logo_dark_64x64.png" width="64" height="64"></a>
+      <!-- hamburger icon -->
+      <a class="navbar-burger burger" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="container">
+      <!-- navbar menu -->
+      <div id="navbarMenu" class="navbar-menu midnight">
+        <!-- left -->
+        <div class="navbar-start">
+          <a class="navbar-item" href="../index.html">Home</a>
+          <a class="navbar-item" href="../blog/index.html">Blog</a>
+          <a id="nav-active" class="navbar-item" href="../event/index.html">Event</a>
+        </div>
+        <!-- right -->
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-light is-outlined" style="border: 0;" href="../register/index.html">Sign up</a>
+              <a class="button primary-outlined" href="../login/index.html"><strong>Sign in</strong></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- NAV BAR END -->
+  <!-- SLIDESHOW -->
+  <div class="main-carousel">
+    <div class="carousel-cell"><img src="../img/Banner 3.png"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
+  </div>
+  <!-- SLIDESHOW END -->
+  <div class="columns" style="margin: 2px;">
+    <div class="column is-one-quarter">
+      <!-- SIDEBAR -->
+      <aside class="menu midnight" style="padding: 8px;">
+        <p class="menu-label">Categories</p>
+        <ul class="menu-list">
+          <li><a class="primary">All</a></li>
+          <li>
+            <p class="menu-label">Subject</p>
+            <ul class="menu-list">
+              <li><a>Math</a></li>
+              <li><a>Science</a></li>
+              <li><a>Engineer</a></li>
+              <li><a>STEM</a></li>
+              <li><a>Language</a></li>
+              <li><a>Social</a></li>
+              <li><a>Art</a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <!-- SIDEBAR END -->
+    <!-- CONTENT -->
+    <div class="columns is-centered">
+
+      <div class="Cardcontainer">
+        <div class="column">
+          <div class="card-media">
+            <!-- media container -->
+            <div class="card-media-object-container">
+              <div class="card-media-object" style="background-image: url(./assets/WRG-Thailand-009.jpg);"></div>
+              <span class="card-media-object-tag subtle">Hottest</span>
+              <ul class="card-media-object-social-list">
+                <li>
+                  <img src="./assets/WRG-Thailand-009.jpg" class="">
+                </li>
+                <li>
+                  <img src="https://s16.postimg.cc/b0j0djh79/profile_0_f.jpg" class="">
+                </li>
+                <li class="card-media-object-social-list-item-additional">
+                  <span>+2</span>
+                </li>
+              </ul>
+            </div>
+            <!-- body container -->
+            <div class="card-media-body">
+              <div class="card-media-body-top">
+                <span class="subtle">Mon, APR 30, 7:00 PM</span>
+                <div class="card-media-body-top-icons u-float-right">
+                  <svg fill="#888888" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+                  </svg>
+                  <svg fill="#888888" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                  </svg>
+                </div>
+              </div>
+              <span class="card-media-body-heading">WRG 3019: The most excited robot game</span>
+              <div class="card-media-body-supporting-bottom">
+                <span class="card-media-body-supporting-bottom-text subtle">Bangkok, Thailand</span>
+                <span class="card-media-body-supporting-bottom-text subtle u-float-right">Free &ndash; $30</span>
+              </div>
+              <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">
+                <span class="card-media-body-supporting-bottom-text subtle">#robotics #engineer</span>
+                <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">VIEW
+                  TICKETS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card-media">
+            <!-- media container -->
+            <div class="card-media-object-container">
+              <div class="card-media-object" style="background-image: url(./assets/Kidbright-hackathon.jpg);"></div>
+              <ul class="card-media-object-social-list">
+                <li>
+                  <img src="./assets/Kidbright-hackathon.jpg" class="">
+                </li>
+              </ul>
+            </div>
+            <!-- body container -->
+            <div class="card-media-body">
+              <div class="card-media-body-top">
+                <span class="subtle">Mon, APR 30, 6:00 PM</span>
+                <div class="card-media-body-top-icons u-float-right">
+                  <svg fill="#888888" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+                  </svg>
+                  <svg fill="#888888" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                  </svg>
+                </div>
+              </div>
+              <span class="card-media-body-heading">KidBright Hackathon 2020</span>
+              <div class="card-media-body-supporting-bottom">
+                <span class="card-media-body-supporting-bottom-text subtle"></span>
+                <span class="card-media-body-supporting-bottom-text subtle u-float-right">$25 &ndash; $80</span>
+              </div>
+              <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">
+                <span class="card-media-body-supporting-bottom-text subtle">#Music #Performance</span>
+                <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">VIEW
+                  TICKETS</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- CONTENT END -->
+  </div>
+  <script>
+    var flickity = new Flickity('.main-carousel', {
+      // options
+      cellAlign: 'left',
+      contain: true,
+      autoPlay: true,
+      wrapAround: true
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
