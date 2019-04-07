@@ -76,7 +76,8 @@ body {
 .carousel-cell img {
   display: block;
   margin: auto;
-  height: 450px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* MENU */
