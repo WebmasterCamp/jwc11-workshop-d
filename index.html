@@ -18,49 +18,47 @@
 <body>
   <!-- NAV BAR -->
   <nav class="navbar midnight">
+    <div class="navbar-brand">
+      <!-- logo -->
+      <a href="index.html"><img class="navbar-item" src="img/logo_dark_64x64.png" width="64" height="64"></a>
+      <!-- hamburger icon -->
+      <a class="navbar-burger burger" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
     <div class="container">
-      <div class="navbar-brand">
-        <a href="index.html">
-          <img class="navbar-item nospace" src="img/logo_dark_64x64.png" width="64" height="64">
-        </a>
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-          data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      <div class="navbar-menu">
+      <!-- navbar menu -->
+      <div id="navbarMenu" class="navbar-menu midnight">
+        <!-- left -->
         <div class="navbar-start">
           <a class="navbar-item">Home</a>
           <a class="navbar-item">Blog</a>
         </div>
-
-        <div class="navbar-end"></div>
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-outlined is-light">Sign up</a>
-            <a class="button primary" style="border: 0;"><strong>Sign in</strong></a>
+        <!-- right -->
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-light is-outlined" style="border: 0;">Sign up</a>
+              <a class="button primary-outlined"><strong>Sign in</strong></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
-    </div>
     </div>
   </nav>
   <!-- NAV BAR END -->
   <!-- SLIDESHOW -->
   <div class="main-carousel">
-    <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
-    <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
-    <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
-    <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/720x450"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/480x450"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/360x450"></div>
   </div>
   <!-- SLIDESHOW END -->
-
   <!-- SIDEBAR -->
+
   <!-- SIDEBAR END -->
   <script>
     var flickity = new Flickity('.main-carousel', {
