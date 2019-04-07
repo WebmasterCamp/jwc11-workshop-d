@@ -46,17 +46,7 @@ body{
 .logo img{
 	display:inline-block;
 }
-.nav-icon{
-	float: left;
-	margin: 0.6% 2% 0 8%;
-	width: 4.55%;
-}
-.nav-icon a span{
-	width:48px;
-	height:34px;
-	display:block;
-	background:url(../images/nav-icon.png) no-repeat 0px 0px;
-}
+
 .top-searchbar {
 	float: left;
 	width: 46%;
