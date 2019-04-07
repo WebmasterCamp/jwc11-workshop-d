@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Project | Projects.in.th</title>
+    <link rel="icon" href="img/logo_16x16.png" />
     <!-- BULMA -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
     <link rel="stylesheet" href="main.css" />
@@ -33,8 +34,9 @@
             <div id="navbarMenu" class="navbar-menu midnight">
                 <!-- left -->
                 <div class="navbar-start">
-                    <a id="nav-active" class="navbar-item" href="index.html">Home</a>
-                    <a class="navbar-item" href="blog/index.html">Blog</a>
+                    <a class="navbar-item" href="index.html">Home</a>
+                    <a id="nav-active" class="navbar-item" href="blog/index.html">Blog</a>
+                    <a class="navbar-item" href="event/index.html">Event</a>
                 </div>
                 <!-- right -->
                 <div class="navbar-end">
@@ -50,72 +52,213 @@
         </div>
     </nav>
     <!-- NAV BAR END -->
-    <div class="columns">
-        <div class="column is-four-fifths">
 
+    <div class="container" style="margin-top: 24px">
+        <!-- TILE -->
+        <div class="box">
+            <div class="tile is-ancestor">
+                <div class="tile is-8 is-parent">
+                    <!-- SLIDESHOW -->
+                    <div class="main-carousel">
+                        <div class="carousel-cell"><img src="https://via.placeholder.com/1280x720"></div>
+                        <div class="carousel-cell"><img src="https://via.placeholder.com/1280x720"></div>
+                        <div class="carousel-cell"><img src="https://via.placeholder.com/1280x720"></div>
+                        <div class="carousel-cell"><img src="https://via.placeholder.com/1280x720"></div>
+                    </div>
+                    <!-- SLIDESHOW END -->
+                </div>
+                <div class="tile is-child">
+                    <!-- DETAIL -->
+                    <div class="tile">
+                        <article class="tile is-child box">
+                            <div class="content">
+                                <p class="title">Tall column</p>
+                                <p class="subtitle">With even more content</p>
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at
+                                        erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam,
+                                        consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula
+                                        eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- DETAIL END -->
+                </div>
+            </div>
+            <!-- AUTHOR -->
+            <div class="box">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48"><img src="https://via.placeholder.com/48x48">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">John Smith</p>
+                        <p class="subtitle is-6">@johnsmith</p>
+                    </div>
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                    <a href="#">#css</a> <a href="#">#responsive</a>
+                    <br>
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+            </div>
+            <!-- AUTHOR END -->
         </div>
-    </div>
-    <!-- SLIDESHOW -->
-    <div class="main-carousel">
-        <div class="carousel-cell"><img src="img/banner_1.png"></div>
-        <div class="carousel-cell"><img src="img/banner_2.png"></div>
-        <div class="carousel-cell"><img src="img/banner_3.png"></div>
-        <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
-        <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
-    </div>
-    <!-- SLIDESHOW END -->
-    <div class="columns" style="padding: 10px;">
-        <div class="column is-one-fifth">
-            <!-- SIDEBAR -->
-            <aside class="menu midnight" style="padding: 10px;">
-                <p class="menu-label">Categories</p>
-                <ul class="menu-list">
-                    <li><a class="primary">All</a></li>
-                    <li>
-                        <p class="menu-label">Subject</p>
-                        <ul class="menu-list">
-                            <li><a>Math</a></li>
-                            <li><a>Science</a></li>
-                            <li><a>Engineer</a></li>
-                            <li><a>STEM</a></li>
-                            <li><a>Language</a></li>
-                            <li><a>Social</a></li>
-                            <li><a>Art</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </aside>
+        <!-- TILE END -->
+
+        <!-- CARD COMMENT -->
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <figure class="media-left">
+                        <p class="image is-64x64"><img src="https://bulma.io/images/placeholders/128x128.png">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna
+                                eros, eu
+                                pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio
+                                quis
+                                feugiat
+                                facilisis.
+                            </p>
+                        </div>
+                        <nav class="level is-mobile">
+                            <div class="level-left">
+                                <a class="level-item">
+                                    <span class="icon is-small"><i class="fas fa-reply"></i></span>
+                                </a>
+                                <a class="level-item">
+                                    <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+                                </a>
+                                <a class="level-item">
+                                    <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="media-right">
+                        <button class="delete"></button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- SIDEBAR END -->
-        <script>
-            var flickity = new Flickity('.main-carousel', {
-                // options
-                cellAlign: 'left',
-                contain: true,
-                autoPlay: true,
-                wrapAround: true
-            });
+        <!-- CARD COMMENT END -->
+        <!-- CARD COMMENT -->
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <figure class="media-left">
+                        <p class="image is-64x64"><img src="https://bulma.io/images/placeholders/128x128.png">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna
+                                eros, eu
+                                pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio
+                                quis
+                                feugiat
+                                facilisis.
+                            </p>
+                        </div>
+                        <nav class="level is-mobile">
+                            <div class="level-left">
+                                <a class="level-item">
+                                    <span class="icon is-small"><i class="fas fa-reply"></i></span>
+                                </a>
+                                <a class="level-item">
+                                    <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+                                </a>
+                                <a class="level-item">
+                                    <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="media-right">
+                        <button class="delete"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CARD COMMENT END -->
+        <!-- CARD COMMENT -->
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <figure class="media-left">
+                        <p class="image is-64x64">
+                            <img src="https://bulma.io/images/placeholders/128x128.png">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <div class="field">
+                            <p class="control">
+                                <textarea class="textarea" placeholder="Add a comment..."></textarea>
+                            </p>
+                        </div>
+                        <nav class="level">
+                            <div class="level-left">
+                                <div class="level-item">
+                                    <a class="button is-info">Submit</a>
+                                </div>
+                            </div>
+                            <div class="level-right">
+                                <div class="level-item">
+                                    <label class="checkbox">
+                                        <input type="checkbox"> Press enter to submit
+                                    </label>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CARD COMMENT END -->
 
-            document.addEventListener('DOMContentLoaded', () => {
-                // Get all "navbar-burger" elements
-                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-                // Check if there are any navbar burgers
-                if ($navbarBurgers.length > 0) {
-                    // Add a click event on each of them
-                    $navbarBurgers.forEach(el => {
-                        el.addEventListener('click', () => {
-                            // Get the target from the "data-target" attribute
-                            const target = el.dataset.target;
-                            const $target = document.getElementById(target);
+    </div>
+    <script>
+        var flickity = new Flickity('.main-carousel', {
+            // options
+            cellAlign: 'left',
+            contain: true,
+            autoPlay: true,
+            wrapAround: true
+        });
 
-                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                            el.classList.toggle('is-active');
-                            $target.classList.toggle('is-active');
-                        });
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
                     });
-                }
-            });
-        </script>
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
