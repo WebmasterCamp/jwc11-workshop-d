@@ -1,37 +1,59 @@
 /* PRIMARY    : #f17841 */
-        /* MIDNIGHT  : #1a1e29 */
-        /* DARK      : #2a313b */
-        /* LIGHT     : #b2b2b2 */
-        .primary {
-            background-color: #f17841;
-        }
-
-        .midnight {
-            background-color: #1a1e29;
-        }
-
-        .dark {
-            background-color: #2a313b;
-        }
-
-        .light {
-            background-color: #b2b2b2;
-        }
-
-        /* * {
-            border: 1px solid black;
-        } */
-
-        .nospace {
-            margin: 0;
-            padding: 0;
-        }
-
-        .navbar-item {
-            color: white;
-        }
-
-        .navbar-start .navbar-item:hover {
-            background: #2a313b !important;
-            color: white !important;
-        }
+/* MIDNIGHT  : #1a1e29 */
+/* DARK      : #2a313b */
+/* LIGHT     : #b2b2b2 */
+.primary {
+    background-color: #f17841;
+  }
+  
+  .midnight {
+    background-color: #1a1e29;
+  }
+  
+  .dark {
+    background-color: #2a313b;
+  }
+  
+  .light {
+    background-color: #b2b2b2;
+  }
+  
+  .nospace {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .primary-outlined {
+    background: transparent;
+    border: 1px solid #f17841; color: #f17841 !important;
+  }
+  
+  .primary-outlined:hover {
+    color: white !important;
+    background-color: #f17841 !important;
+  }
+  
+  .primary-active {
+    color: white;
+    background-color: #f17841;
+  }
+  
+  /* NAV BAR */
+  
+  .navbar-item {
+    color: white;
+  }
+  
+  .navbar-start .navbar-item {
+    background-color: #1a1e29;
+    color: white;
+  }
+  
+  .navbar-start .navbar-item:hover {
+    background: #2a313b;
+    color: white;
+  }
+  
+  #nav-active {
+    background-color: #f17841 !important;
+  }
