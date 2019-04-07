@@ -1,9 +1,7 @@
 /**
  * Grid container
  */
-#main {
-	margin-top: 9em;
-}
+
 #tiles {
   list-style-type: none;
   position: relative; /** Needed to ensure items are laid out relative to this container **/
@@ -123,22 +121,10 @@ footer a {
   background-color: #ddd;
 }
 /*--media Quries for 640px-monitors-*/
-@media only screen and (max-width:640px) and (min-width:480px) {
-	#main {
-		margin-top: 7em;
-	}
-}
-/*--media Quries for 480px-monitors-*/
-@media only screen and (max-width:480px) and (min-width:320px) {
-	#main {
-		margin-top: 9.5em;
-	}
-}
+
 /*--media Quries for 320px-monitors-*/
 @media only screen and (max-width:320px) and (min-width:240px) {
-	#main {
-		margin-top: 9em;
-	}
+	
 	#tiles li {
 		width: 266px;
 	}
