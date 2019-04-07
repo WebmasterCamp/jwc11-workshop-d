@@ -49,11 +49,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <body>
     <!-- NAV BAR -->
-    <nav class="navbar midnight">
+    <nav class="navbar midnight" style="position: sticky; top: 0;">
         <div class="navbar-brand">
             <!-- logo -->
-            <a href="../../index.html"><img class="navbar-item" src="../../img/logo_dark_64x64.png" width="64"
-                    height="64"></a>
+            <a href="../../index.html"><img class="navbar-item" src="../../img/logo_banner_light.png" style="max-height: 64px;"></a>
             <!-- hamburger icon -->
             <a class="navbar-burger burger" data-target="navbarMenu">
                 <span aria-hidden="true"></span>
@@ -67,7 +66,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <!-- left -->
                 <div class="navbar-start">
                     <a class="navbar-item" href="../../index.html">Home</a>
-                    <a class="navbar-item" href="../index.html">Blog</a>
+                    <a id="nav-active" class="navbar-item" href="../../blog/index.html">Blog</a>
+                    <a class="navbar-item" href="../../event/index.html">Event</a>
                 </div>
                 <!-- right -->
                 <div class="navbar-end">
@@ -83,7 +83,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
         </div>
     </nav>
-    <!-- NAV BAR END -->
     <!-- NAV BAR END -->
     <!---start-content---->
     <div class="content">
