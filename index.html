@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- BULMA -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
+    <style>
+        /* PRIMARY    : #f17841 */
+        /* MIDNIGHT  : #1a1e29 */
+        /* DARK      : #2a313b */
+        /* LIGHT     : #b2b2b2 */
+        .primary {
+            background-color: #f17841;
+        }
+
+        .midnight {
+            background-color: #1a1e29;
+        }
+
+        .dark {
+            background-color: #2a313b;
+        }
+
+        .light {
+            background-color: #b2b2b2;
+        }
+
+        /* * {
+            border: 1px solid black;
+        } */
+
+        .nospace {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-item {
+            color: white;
+        }
+
+        .navbar-start .navbar-item:hover {
+            background: #2a313b !important;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar midnight">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img class="navbar-item nospace" src="img/logo_dark_64x64.png" width="64" height="64">
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">Home</a>
+                    <a class="navbar-item">Documentation</a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
