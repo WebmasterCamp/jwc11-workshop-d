@@ -2,120 +2,91 @@
 <html lang="th">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- BULMA -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
-    <link rel="stylesheet" href="./main.css" />
-    <style>
-        /* PRIMARY    : #f17841 */
-        /* MIDNIGHT  : #1a1e29 */
-        /* DARK      : #2a313b */
-        /* LIGHT     : #b2b2b2 */
-        .primary {
-            background-color: #f17841;
-        }
-
-        .midnight {
-            background-color: #1a1e29;
-        }
-
-        .dark {
-            background-color: #2a313b;
-        }
-
-        .light {
-            background-color: #b2b2b2;
-        }
-
-        .nospace {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- BULMA -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
+  <link rel="stylesheet" href="main.css" />
+  <!-- Flickity -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
-    <!-- NAV BAR 
-    <nav class="navbar midnight">
-        <div class="container">
-            <div class="navbar-brand">
-                <a href="index.html">
-                    <img class="navbar-item nospace" src="img/logo_dark_64x64.png" width="64" height="64">
-                </a>
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                    data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-            <div class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item">Home</a>
-                    <a class="navbar-item">Blog</a>
-                </div>
-
-                <div class="navbar-end"></div>
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <a class="button is-outlined is-light">Sign up</a>
-                            <a class="button primary" style="border: 0;"><strong>Sign in</strong></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- NAV BAR  -->
+  <nav class="navbar midnight">
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img class="navbar-item nospace" src="img/logo_dark_64x64.png" width="64" height="64">
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">Home</a>
+          <a class="navbar-item">Blog</a>
         </div>
-    </nav>
-    <!-- NAV BAR END -->
-    <!-- SLIDESHOW -->
-    <div class="main-carousel">
-        <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
-        <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
-        <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
-        <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
+        <div class="navbar-end"></div>
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-outlined is-light">Sign up</a>
+            <a class="button primary" style="border: 0;"><strong>Sign in</strong></a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- SLIDESHOW END -->
+    </div>
+  </nav>
+  <!-- NAV BAR END -->
+  <!-- SLIDESHOW -->
+  <div class="main-carousel">
+    <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
+  </div>
+  <!-- SLIDESHOW END -->
 
-    <!-- SIDEBAR -->
+  <!-- SIDEBAR -->
+  <!-- SIDEBAR END -->
+  <script>
+    var flickity = new Flickity('.main-carousel', {
+      // options
+      cellAlign: 'left',
+      contain: true,
+      autoPlay: true,
+      wrapAround: true
+    });
 
-    <script>
-        var flickity = new Flickity('.main-carousel', {
-            // options
-            cellAlign: 'left',
-            contain: true,
-            autoPlay: true,
-            wrapAround: true
+    document.addEventListener('DOMContentLoaded', () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
         });
-
-        document.addEventListener('DOMContentLoaded', () => {
-
-            // Get all "navbar-burger" elements
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-            // Check if there are any navbar burgers
-            if ($navbarBurgers.length > 0) {
-
-                // Add a click event on each of them
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-
-                        // Get the target from the "data-target" attribute
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
-
-                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                        el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
-
-                    });
-                });
-            }
-
-        });
-    </script>
+      }
+    });
+  </script>
 </body>
 
 </html>
