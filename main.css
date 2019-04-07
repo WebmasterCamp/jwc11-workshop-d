@@ -45,13 +45,17 @@
 }
 
 .navbar-start .navbar-item {
-  background: #1a1e29;
+  background-color: #1a1e29;
   color: white;
 }
 
 .navbar-start .navbar-item:hover {
   background: #2a313b;
   color: white;
+}
+
+#nav-active {
+  background-color: #f17841 !important;
 }
 
 /* Flickity */
