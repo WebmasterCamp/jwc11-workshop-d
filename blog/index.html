@@ -20,11 +20,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!----//webfonts---->
 	<!-- Global CSS for the page and tiles -->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="../main.css">
+
 	 <!-- //Global CSS for the page and tiles -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
 	<!---start-click-drop-down-menu----->
 	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="../main.css"
 	<!----start-dropdown--->
 	<script type="text/javascript">
 		var $ = jQuery.noConflict();
@@ -52,36 +53,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
+	<!-- NAV BAR -->
 	<nav class="navbar midnight">
-		<div class="container">
-			<div class="navbar-brand">
-				<a href="index.html">
-					<img class="navbar-item nospace" src="../img/logo_dark_64x64.png" width="64" height="64">
-				</a>
-				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-					data-target="navbarBasicExample">
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-				</a>
-			</div>
-			<div class="navbar-menu">
-				<div class="navbar-start">
-					<a class="navbar-item">Home</a>
-					<a class="navbar-item">Blog</a>
-				</div>
-
-				<div class="navbar-end"></div>
-				<div class="navbar-item">
-					<div class="buttons">
-						<a class="button is-outlined is-light">Sign up</a>
-						<a class="button primary" style="border: 0;"><strong>Sign in</strong></a>
+			<div class="container">
+					<div class="navbar-brand">
+							<a href="index.html">
+									<img class="navbar-item nospace" src="../img/logo_dark_64x64.png" width="64" height="64">
+							</a>
+							<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+									data-target="navbarBasicExample">
+									<span aria-hidden="true"></span>
+									<span aria-hidden="true"></span>
+									<span aria-hidden="true"></span>
+							</a>
 					</div>
-				</div>
+					<div class="navbar-menu">
+							<div class="navbar-start">
+									<a class="navbar-item" href="../index.html">Home</a>
+									<a class="navbar-item" href="./index.html">Blog</a>
+							</div>
+
+							<div class="navbar-end"></div>
+									<div class="navbar-item">
+											<div class="buttons">
+													<a class="button is-outlined is-light">Sign up</a>
+													<a class="button primary" style="border: 0;"><strong>Sign in</strong></a>
+											</div>
+									</div>
+							</div>
+					</div>
 			</div>
-		</div>
-		</div>
 	</nav>
+	<!-- NAV BAR END -->
 
 
 	<!---start-content---->
@@ -90,11 +93,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div id="main" role="main">
 				<ul id="tiles">
 					<!-- These are our grid blocks -->
-					<li onclick="location.href='single-page.html';">
+					<li onclick="location.href='./posts/01.html'">
 						<img src="images/img4.jpg" width="282" height="334">
 						<div class="post-info">
 							<div class="post-basic-info">
-								<h3><a href="#">Animation films</a></h3>
+								<h3><a href="./posts/01.html">Animation films</a></h3>
 								<span><a href="#"><label> </label>Movies</a></span>
 								<p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
 							</div>
@@ -110,11 +113,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 					</li>
 					<!-- These are our grid blocks -->
-					<li onclick="location.href='single-page.html';">
+					<li onclick="location.href='./posts/02.html'">
 						<img src="images/img4.jpg" width="282" height="334">
 						<div class="post-info">
 							<div class="post-basic-info">
-								<h3><a href="#">Animation films</a></h3>
+								<h3><a href="./posts/02.html">Animation films</a></h3>
 								<span><a href="#"><label> </label>Movies</a></span>
 								<p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
 							</div>
@@ -130,11 +133,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 					</li>
 					<!-- These are our grid blocks -->
-					<li onclick="location.href='single-page.html';">
+					<li onclick="location.href='./posts/03.html'">
 						<img src="images/img4.jpg" width="282" height="334">
 						<div class="post-info">
 							<div class="post-basic-info">
-								<h3><a href="#">Animation films</a></h3>
+								<h3><a href="./posts/03.html">Animation films</a></h3>
 								<span><a href="#"><label> </label>Movies</a></span>
 								<p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
 							</div>
@@ -152,11 +155,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<!-- These are our grid blocks -->
 
 					<!-- These are our grid blocks -->
-					<li onclick="location.href='single-page.html';">
+					<li onclick="location.href='./posts/04.html'">
 						<img src="images/img4.jpg" width="282" height="334">
 						<div class="post-info">
 							<div class="post-basic-info">
-								<h3><a href="#">Animation films</a></h3>
+								<h3><a href="./posts/04.html">Animation films</a></h3>
 								<span><a href="#"><label> </label>Movies</a></span>
 								<p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
 							</div>
@@ -172,11 +175,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 					</li>
 					<!-- These are our grid blocks -->
-					<li onclick="location.href='single-page.html';">
+					<li onclick="location.href='./posts/05.html'">
 						<img src="images/img4.jpg" width="282" height="334">
 						<div class="post-info">
 							<div class="post-basic-info">
-								<h3><a href="#">Animation films</a></h3>
+								<h3><a href="./posts/05.html">Animation films</a></h3>
 								<span><a href="#"><label> </label>Movies</a></span>
 								<p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
 							</div>
@@ -192,11 +195,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 					</li>
 					<!-- These are our grid blocks -->
-					<li onclick="location.href='single-page.html';">
-						<img src="images/img3.jpg" width="282" height="334">
+					<li onclick="location.href='./posts/06.html'">
+						<img src="images/img4.jpg" width="282" height="334">
 						<div class="post-info">
 							<div class="post-basic-info">
-								<h3><a href="#">Animation films</a></h3>
+								<h3><a href="./posts/06.html">Animation films</a></h3>
 								<span><a href="#"><label> </label>Movies</a></span>
 								<p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
 							</div>
