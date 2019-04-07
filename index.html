@@ -8,6 +8,11 @@
     <title>Document</title>
     <!-- BULMA -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
+
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <style>
         /* PRIMARY    : #f17841 */
         /* MIDNIGHT  : #1a1e29 */
@@ -46,6 +51,15 @@
             background: #2a313b !important;
             color: white !important;
         }
+
+        .carousel-cell {
+            width: 100%;
+        }
+
+        .carousel-cell img {
+            display: block;
+            margin: auto auto;
+        }
     </style>
 </head>
 
@@ -67,18 +81,33 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a class="button is-primary">
-                                <strong>Sign up</strong>
-                            </a>
-                            <a class="button is-light">
-                                Log in
-                            </a>
+                            <a class="button is-outlined is-light">Sign up</a>
+                            <a class="button primary" style="border: 0;"><strong>Sign in</strong></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+    <!-- NAV BAR END -->
+    <!-- SLIDESHOW -->
+    <div class="main-carousel">
+        <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
+        <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
+        <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
+        <div class="carousel-cell"><img src="https://via.placeholder.com/720x300"></div>
+    </div>
+    <!-- SLIDESHOW END -->
+    
+    <script>
+        var flickity = new Flickity('.main-carousel', {
+            // options
+            cellAlign: 'left',
+            contain: true,
+            autoPlay: true,
+            wrapAround: true
+        });
+    </script>
 </body>
 
 </html>
