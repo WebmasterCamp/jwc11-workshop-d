@@ -9,17 +9,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <head>
     <title>Pinball Website Template | single-page :: w3layouts</title>
-    <link href="../css/style.css" rel='stylesheet' type='text/css' />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="images/fav-icon.png" />
+    <link href="../css/style.css" rel='stylesheet' type='text/css' />
     <script
         type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     </script>
     <!----webfonts---->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!----//webfonts---->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
-    <!---start-click-drop-down-menu----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
+    <link rel="stylesheet" href="../css/navbar.css" <!---start-click-drop-down-menu----->
     <script src="js/jquery.min.js"></script>
     <!----start-dropdown--->
     <script type="text/javascript">
@@ -47,6 +48,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
+    <!-- NAV BAR -->
+    <nav class="navbar midnight">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img class="navbar-item nospace" src="../images/logo_dark_64x64.png" width="64" height="64">
+                </a>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">Home</a>
+                    <a class="navbar-item">Blog</a>
+                </div>
+
+                <div class="navbar-end"></div>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-outlined is-light">Sign up</a>
+                        <a class="button primary" style="border: 0;"><strong>Sign in</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- NAV BAR END -->
     <!---start-content---->
     <div class="content">
         <div class="wrap">
