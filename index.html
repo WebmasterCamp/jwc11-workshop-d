@@ -15,7 +15,7 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
-<body>
+<body class="light">
   <!-- NAV BAR -->
   <nav class="navbar midnight">
     <div class="navbar-brand">
@@ -52,14 +52,40 @@
   <!-- SLIDESHOW -->
   <div class="main-carousel">
     <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
-    <div class="carousel-cell"><img src="https://via.placeholder.com/720x450"></div>
-    <div class="carousel-cell"><img src="https://via.placeholder.com/480x450"></div>
-    <div class="carousel-cell"><img src="https://via.placeholder.com/360x450"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
+    <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
   </div>
   <!-- SLIDESHOW END -->
-  <!-- SIDEBAR -->
-
-  <!-- SIDEBAR END -->
+  <div class="columns" style="margin: 2px;">
+    <div class="column is-one-quarter">
+      <!-- SIDEBAR -->
+      <aside class="menu midnight" style="padding: 8px;">
+        <p class="menu-label">Categories</p>
+        <ul class="menu-list">
+          <li><a class="primary">All</a></li>
+          <li>
+            <p class="menu-label">Subject</p>
+            <ul class="menu-list">
+              <li><a>Math</a></li>
+              <li><a>Science</a></li>
+              <li><a>Engineer</a></li>
+              <li><a>STEM</a></li>
+              <li><a>Language</a></li>
+              <li><a>Social</a></li>
+              <li><a>Art</a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <!-- SIDEBAR END -->
+    <!-- CONTENT -->
+    <div class="column">
+    </div>
+    <!-- CONTENT END -->
+  </div>
   <script>
     var flickity = new Flickity('.main-carousel', {
       // options
