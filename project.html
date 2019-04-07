@@ -2,456 +2,120 @@
 <html lang="th">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <!-- BULMA -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
-  <link rel="stylesheet" href="main.css" />
-  <!-- Flickity -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- BULMA -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
+    <link rel="stylesheet" href="main.css" />
+    <!-- Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body class="light">
-  <!-- NAV BAR -->
-  <nav class="navbar midnight">
-    <div class="navbar-brand">
-      <!-- logo -->
-      <a href="index.html"><img class="navbar-item" src="img/logo_dark_64x64.png" width="64" height="64"></a>
-      <!-- hamburger icon -->
-      <a class="navbar-burger burger" data-target="navbarMenu">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="container">
-      <!-- navbar menu -->
-      <div id="navbarMenu" class="navbar-menu midnight">
-        <!-- left -->
-        <div class="navbar-start">
-          <a id="nav-active" class="navbar-item" href="index.html">Home</a>
-          <a class="navbar-item" href="blog/index.html">Blog</a>
+    <!-- NAV BAR -->
+    <nav class="navbar midnight" style="position: sticky; top: 0;">
+        <div class="navbar-brand">
+            <!-- logo -->
+            <a href="index.html"><img class="navbar-item" src="img/logo_banner_light.png" style="max-height: 64px;"></a>
+            <!-- hamburger icon -->
+            <a class="navbar-burger burger" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-        <!-- right -->
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-light is-outlined" style="border: 0;" href="./register/index.html">Sign up</a>
-              <a class="button primary-outlined" href="./login/index.html"><strong>Sign in</strong></a>
+        <div class="container">
+            <!-- navbar menu -->
+            <div id="navbarMenu" class="navbar-menu midnight">
+                <!-- left -->
+                <div class="navbar-start">
+                    <a id="nav-active" class="navbar-item" href="index.html">Home</a>
+                    <a class="navbar-item" href="blog/index.html">Blog</a>
+                </div>
+                <!-- right -->
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-light is-outlined" style="border: 0;" href="./register/index.html">Sign
+                                up</a>
+                            <a class="button primary-outlined" href="./login/index.html"><strong>Sign in</strong></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </nav>
-  <!-- NAV BAR END -->
-  <!-- SLIDESHOW -->
-  <div class="main-carousel">
-    <div class="carousel-cell"><img src="img/banner_1.png"></div>
-    <div class="carousel-cell"><img src="img/banner_2.png"></div>
-    <div class="carousel-cell"><img src="img/banner_3.png"></div>
-    <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
-    <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
-  </div>
-  <!-- SLIDESHOW END -->
-  <div class="columns" style="padding: 10px;">
-    <div class="column is-one-fifth">
-      <!-- SIDEBAR -->
-      <aside class="menu midnight" style="padding: 10px;">
-        <p class="menu-label">Categories</p>
-        <ul class="menu-list">
-          <li><a class="primary">All</a></li>
-          <li>
-            <p class="menu-label">Subject</p>
-            <ul class="menu-list">
-              <li><a>Math</a></li>
-              <li><a>Science</a></li>
-              <li><a>Engineer</a></li>
-              <li><a>STEM</a></li>
-              <li><a>Language</a></li>
-              <li><a>Social</a></li>
-              <li><a>Art</a></li>
-            </ul>
-          </li>
-        </ul>
-      </aside>
-    </div>
-    <!-- SIDEBAR END -->
+    </nav>
+    <!-- NAV BAR END -->
+    <div class="columns">
+        <div class="column is-four-fifths">
 
-    <!-- CONTENT -->
-    <div class="column">
-      <!-- COLUMS -->
-      <div class="columns">
-        <!-- CARD -->
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3"><img src="https://via.placeholder.com/720x450"></figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48"><img src="https://via.placeholder.com/48x48"></figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
         </div>
-        <!-- CARD END -->
-        <!-- CARD -->
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3"><img src="https://via.placeholder.com/720x450"></figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48"><img src="https://via.placeholder.com/48x48"></figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD END -->
-        <!-- CARD -->
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3"><img src="https://via.placeholder.com/720x450"></figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48"><img src="https://via.placeholder.com/48x48"></figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD END -->
-        <!-- CARD -->
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3"><img src="https://via.placeholder.com/720x450"></figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48"><img src="https://via.placeholder.com/48x48"></figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD END -->
-      </div>
-      <!-- COLUMS END-->
-      <!-- COLUMS -->
-      <div class="columns">
-        <!-- CARD -->
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3"><img src="https://via.placeholder.com/720x450"></figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48"><img src="https://via.placeholder.com/48x48"></figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD END -->
-        <!-- CARD -->
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3"><img src="https://via.placeholder.com/720x450"></figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48"><img src="https://via.placeholder.com/48x48"></figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD END -->
-        <!-- CARD -->
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3"><img src="https://via.placeholder.com/720x450"></figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48"><img src="https://via.placeholder.com/48x48"></figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD END -->
-        <!-- CARD -->
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3"><img src="https://via.placeholder.com/720x450"></figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48"><img src="https://via.placeholder.com/48x48"></figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD END -->
-      </div>
-      <!-- COLUMS END-->
-      <!-- COLUMS -->
-      <div class="columns">
-        <!-- CARD -->
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3"><img src="https://via.placeholder.com/720x450"></figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48"><img src="https://via.placeholder.com/48x48"></figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD END -->
-        <!-- CARD -->
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3"><img src="https://via.placeholder.com/720x450"></figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48"><img src="https://via.placeholder.com/48x48"></figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD END -->
-        <!-- CARD -->
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3"><img src="https://via.placeholder.com/720x450"></figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48"><img src="https://via.placeholder.com/48x48"></figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD END -->
-        <!-- CARD -->
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3"><img src="https://via.placeholder.com/720x450"></figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-48x48"><img src="https://via.placeholder.com/48x48"></figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">John Smith</p>
-                  <p class="subtitle is-6">@johnsmith</p>
-                </div>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD END -->
-      </div>
-      <!-- COLUMS END-->
     </div>
-    <!-- CONTENT END -->
-  </div>
-  <script>
-    var flickity = new Flickity('.main-carousel', {
-      // options
-      cellAlign: 'left',
-      contain: true,
-      autoPlay: true,
-      wrapAround: true
-    });
+    <!-- SLIDESHOW -->
+    <div class="main-carousel">
+        <div class="carousel-cell"><img src="img/banner_1.png"></div>
+        <div class="carousel-cell"><img src="img/banner_2.png"></div>
+        <div class="carousel-cell"><img src="img/banner_3.png"></div>
+        <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
+        <div class="carousel-cell"><img src="https://via.placeholder.com/1920x450"></div>
+    </div>
+    <!-- SLIDESHOW END -->
+    <div class="columns" style="padding: 10px;">
+        <div class="column is-one-fifth">
+            <!-- SIDEBAR -->
+            <aside class="menu midnight" style="padding: 10px;">
+                <p class="menu-label">Categories</p>
+                <ul class="menu-list">
+                    <li><a class="primary">All</a></li>
+                    <li>
+                        <p class="menu-label">Subject</p>
+                        <ul class="menu-list">
+                            <li><a>Math</a></li>
+                            <li><a>Science</a></li>
+                            <li><a>Engineer</a></li>
+                            <li><a>STEM</a></li>
+                            <li><a>Language</a></li>
+                            <li><a>Social</a></li>
+                            <li><a>Art</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <!-- SIDEBAR END -->
+        <script>
+            var flickity = new Flickity('.main-carousel', {
+                // options
+                cellAlign: 'left',
+                contain: true,
+                autoPlay: true,
+                wrapAround: true
+            });
 
-    document.addEventListener('DOMContentLoaded', () => {
-      // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-      // Check if there are any navbar burgers
-      if ($navbarBurgers.length > 0) {
-        // Add a click event on each of them
-        $navbarBurgers.forEach(el => {
-          el.addEventListener('click', () => {
-            // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
+            document.addEventListener('DOMContentLoaded', () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+                // Check if there are any navbar burgers
+                if ($navbarBurgers.length > 0) {
+                    // Add a click event on each of them
+                    $navbarBurgers.forEach(el => {
+                        el.addEventListener('click', () => {
+                            // Get the target from the "data-target" attribute
+                            const target = el.dataset.target;
+                            const $target = document.getElementById(target);
 
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-          });
-        });
-      }
-    });
-  </script>
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+                        });
+                    });
+                }
+            });
+        </script>
 </body>
 
 </html>
