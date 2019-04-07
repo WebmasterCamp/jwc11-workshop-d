@@ -20,7 +20,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!----//webfonts---->
 	<!-- Global CSS for the page and tiles -->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="../main.css" <!-- //Global CSS for the page and tiles -->
+	<link rel="stylesheet" href="../main.css">
+	 <!-- //Global CSS for the page and tiles -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
 	<!---start-click-drop-down-menu----->
 	<script src="js/jquery.min.js"></script>
@@ -51,12 +52,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
-	<!-- NAV BAR 
 	<nav class="navbar midnight">
 		<div class="container">
 			<div class="navbar-brand">
 				<a href="index.html">
 					<img class="navbar-item nospace" src="../img/logo_dark_64x64.png" width="64" height="64">
+				</a>
+				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+					data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
 				</a>
 			</div>
 			<div class="navbar-menu">
@@ -68,19 +74,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="navbar-end"></div>
 				<div class="navbar-item">
 					<div class="buttons">
-						<a class="button is-primary">
-							<strong>Sign up</strong>
-						</a>
-						<a class="button is-light">
-							Log in
-						</a>
+						<a class="button is-outlined is-light">Sign up</a>
+						<a class="button primary" style="border: 0;"><strong>Sign in</strong></a>
 					</div>
 				</div>
 			</div>
 		</div>
 		</div>
 	</nav>
-	NAV BAR END -->
 
 
 	<!---start-content---->
@@ -256,7 +257,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			applyLayout();
 
 			// Capture scroll event.
-			$window.bind('scroll.wookmark', onScroll);
+			
 		})(jQuery);
 	</script>
 	<!----//wookmark-scripts---->
