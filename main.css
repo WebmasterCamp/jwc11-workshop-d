@@ -1,37 +1,84 @@
 /* PRIMARY    : #f17841 */
-        /* MIDNIGHT  : #1a1e29 */
-        /* DARK      : #2a313b */
-        /* LIGHT     : #b2b2b2 */
-        .primary {
-            background-color: #f17841;
-        }
+/* MIDNIGHT  : #1a1e29 */
+/* DARK      : #2a313b */
+/* LIGHT     : #b2b2b2 */
+.primary {
+  background-color: #f17841;
+}
 
-        .midnight {
-            background-color: #1a1e29;
-        }
+.midnight {
+  background-color: #1a1e29;
+}
 
-        .dark {
-            background-color: #2a313b;
-        }
+.dark {
+  background-color: #2a313b;
+}
 
-        .light {
-            background-color: #b2b2b2;
-        }
+.light {
+  background-color: #b2b2b2;
+}
 
-        /* * {
-            border: 1px solid black;
-        } */
+.nospace {
+  margin: 0;
+  padding: 0;
+}
 
-        .nospace {
-            margin: 0;
-            padding: 0;
-        }
+.primary-outlined {
+  background: transparent;
+  border: 1px solid #f17841; color: #f17841 !important;
+}
 
-        .navbar-item {
-            color: white;
-        }
+.primary-outlined:hover {
+  color: white !important;
+  background-color: #f17841 !important;
+}
 
-        .navbar-start .navbar-item:hover {
-            background: #2a313b !important;
-            color: white !important;
-        }
+/* NAV BAR */
+
+.navbar-item {
+  color: white;
+}
+
+.navbar-start .navbar-item {
+  background: #1a1e29;
+  color: white;
+}
+
+.navbar-start .navbar-item:hover {
+  background: #2a313b;
+  color: white;
+}
+
+/* Flickity */
+
+.main-carousel {
+  width: 100%;
+  background-color: #2a313b;
+}
+
+.carousel-cell {
+  width: 100%;
+}
+
+.carousel-cell img {
+  display: block;
+  margin: auto;
+  height: 450px;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 10px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
